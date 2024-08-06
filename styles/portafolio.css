@@ -26,3 +26,11 @@
     height: 100%;
     object-fit: cover; /*evita que se estiren las imagenes al agrandar el tamaño*/
 }
+/*---------- imagen de fondo ----------*/
+body{
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat; /*no repetir la imagen*/
+    background-position: center center; /*centrar la imagen horizontal y vertical*/
+    background-attachment: fixed; /*la imagen no se mueve si se hace scroll*/
+    background-size: cover; /*hace que la imagen cubra toda la pantalla*/
+}

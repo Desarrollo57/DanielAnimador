@@ -1,0 +1,45 @@
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+form {
+    margin: 40px 40px;
+}
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.imput-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox {
+    margin: 20px 0;
+}
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover {
+    background-color: darkorange;
+    transform: scale(1.2);
+}
+/*---------- imagen de fondo ----------*/
+body{
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat; /*no repetir la imagen*/
+    background-position: center center; /*centrar la imagen horizontal y vertical*/
+    background-attachment: fixed; /*la imagen no se mueve si se hace scroll*/
+    background-size: cover; /*hace que la imagen cubra toda la pantalla*/
+}
