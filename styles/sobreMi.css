@@ -1,0 +1,48 @@
+/*---------- imagen de fondo ----------*/
+body{
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat; /*no repetir la imagen*/
+    background-position: center center; /*centrar la imagen horizontal y vertical*/
+    background-attachment: fixed; /*la imagen no se mueve si se hace scroll*/
+    background-size: cover; /*hace que la imagen cubra toda la pantalla*/
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.profesion{
+    background-color: aliceblue;
+    width: 80vw;
+    margin: 10vh 10vw 15vh 10vw;
+    border-radius: 4px;
+    padding: 2vh;
+}
+.sobreMi{
+    background-color: aliceblue;
+    width: 80vw;
+    margin: 10vh 10vw 10vh 10vw;
+    border-radius: 4px;
+    padding: 2vh;
+}
+.educacion{
+    background-color: aliceblue;
+    width: 40vw;
+    margin: 10vh 4vw 10vh 5vw;
+    border-radius: 4px;
+    padding: 2vh;
+}
+.experiencia{
+    background-color: aliceblue;
+    width: 40vw;
+    margin: 10vh 5vw 10vh 4vw;
+    border-radius: 4px;
+    padding: 2vh;
+}
+.tecnologias{
+    background-color: aliceblue;
+    width: 80vw;
+    margin: 10vh 10vw 5vh 10vw;
+    border-radius: 4px;
+    padding: 2vh;
+}
