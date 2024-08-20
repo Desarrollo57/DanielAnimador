@@ -1,3 +1,7 @@
+.galeria{
+    position: relative;
+    margin-top: 20vh;
+}
 .galeria h1{
     text-align: center;
     margin: 20px 0 15px 0;
@@ -28,9 +32,16 @@
 }
 /*---------- imagen de fondo ----------*/
 body{
+    /*
     background-image: url(../img/background.png);
     background-repeat: no-repeat; /*no repetir la imagen*/
+    /*
     background-position: center center; /*centrar la imagen horizontal y vertical*/
+    /*
     background-attachment: fixed; /*la imagen no se mueve si se hace scroll*/
+    /*
     background-size: cover; /*hace que la imagen cubra toda la pantalla*/
+
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }

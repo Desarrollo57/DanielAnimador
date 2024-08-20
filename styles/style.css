@@ -7,11 +7,16 @@
     font-size: 20px;
 }
 /*---------- menú superior ----------*/
+header{
+    display: flex;
+    justify-content: center;
+}
 .contenedorMenuHorizontal{
-    position: relative;
+    position: absolute;
     background: rgba(0, 0 ,0, .5);/*Efecto de transparencia para el menu principal*/
     backdrop-filter: blur(3px);
     border-radius: 5px;
+    width: 80%;
 }
 nav{
     max-width: 900px;

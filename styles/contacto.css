@@ -1,3 +1,6 @@
+main{
+    margin-top: 20vh;
+}
 td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
@@ -37,9 +40,6 @@ form label, form legend {
 }
 /*---------- imagen de fondo ----------*/
 body{
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat; /*no repetir la imagen*/
-    background-position: center center; /*centrar la imagen horizontal y vertical*/
-    background-attachment: fixed; /*la imagen no se mueve si se hace scroll*/
-    background-size: cover; /*hace que la imagen cubra toda la pantalla*/
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(60,61,55,1) 0%, rgba(105,117,101,1) 50%, rgba(236,223,204,1) 100%);
 }

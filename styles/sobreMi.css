@@ -1,15 +1,12 @@
 /*---------- imagen de fondo ----------*/
 body{
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat; /*no repetir la imagen*/
-    background-position: center center; /*centrar la imagen horizontal y vertical*/
-    background-attachment: fixed; /*la imagen no se mueve si se hace scroll*/
-    background-size: cover; /*hace que la imagen cubra toda la pantalla*/
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(60,61,55,1) 0%, rgba(105,117,101,1) 50%, rgba(236,223,204,1) 100%);
 }
-
 main{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20vh;
 }
 .profesion{
     background-color: aliceblue;
@@ -21,28 +18,28 @@ main{
 .sobreMi{
     background-color: aliceblue;
     width: 80vw;
-    margin: 10vh 10vw 10vh 10vw;
+    margin: 10vh 10vw 1vh 10vw;
     border-radius: 4px;
     padding: 2vh;
 }
 .educacion{
     background-color: aliceblue;
     width: 40vw;
-    margin: 10vh 4vw 10vh 5vw;
+    margin: 1vh 1vw 1vh 8.5vw;
     border-radius: 4px;
     padding: 2vh;
 }
 .experiencia{
     background-color: aliceblue;
     width: 40vw;
-    margin: 10vh 5vw 10vh 4vw;
+    margin: 1vh 8vw 1vh 1vw;
     border-radius: 4px;
     padding: 2vh;
 }
 .tecnologias{
     background-color: aliceblue;
     width: 80vw;
-    margin: 10vh 10vw 5vh 10vw;
+    margin: 1vh 10vw 5vh 10vw;
     border-radius: 4px;
     padding: 2vh;
 }
