@@ -6,9 +6,10 @@
     text-align: center;
     margin: 20px 0 15px 0;
     font-weight: 400;
+    color: #ECDFCC;
 }
 .linea{
-    border-top: 5px solid #0077c0;
+    border-top: 5px solid #ECDFCC;
 }
 .contenedorImagenes{
     display: flex;
@@ -30,18 +31,83 @@
     height: 100%;
     object-fit: cover; /*evita que se estiren las imagenes al agrandar el tamaño*/
 }
-/*---------- imagen de fondo ----------*/
+/*---------- fondo ----------*/
 body{
-    /*
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat; /*no repetir la imagen*/
-    /*
-    background-position: center center; /*centrar la imagen horizontal y vertical*/
-    /*
-    background-attachment: fixed; /*la imagen no se mueve si se hace scroll*/
-    /*
-    background-size: cover; /*hace que la imagen cubra toda la pantalla*/
+    background-color: #3C3D37;
+}
+/*---------- tarjeta proyecto ----------*/
+.proyecto{
+    background-color: #697565;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    margin: 5px 0px 5px 0px;
+}
+.proyecto img{
+    width: 90%;
+    border-radius: 10px;
+}
+.tituloTarjeta{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+.resumenProyecto{
+    width: 80%;
+}
+.programasUsados{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+.after{
+    background-color: #7C93C3;
+    font-size: 18px;
+    width: fit-content;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    margin: 2px 3px 2px 3px;
+}
+.illustrator{
+    background-color: #7C93C3;
+    font-size: 18px;
+    width: fit-content;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    margin: 2px 3px 2px 3px;
+}
+.premiere{
+    background-color: #7C93C3;
+    font-size: 18px;
+    width: fit-content;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    margin: 2px 3px 2px 3px;
+}
+.photoshop{
+    background-color: #7C93C3;
+    font-size: 18px;
+    width: fit-content;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    margin: 2px 3px 2px 3px;
+}
+.audition{
+    background-color: #7C93C3;
+    font-size: 18px;
+    width: fit-content;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    margin: 2px 3px 2px 3px;
+}
+.cinema{
+    background-color: #7C93C3;
+    font-size: 18px;
+    width: fit-content;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    margin: 2px 3px 2px 3px;
 }

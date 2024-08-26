@@ -38,8 +38,7 @@ form label, form legend {
     background-color: darkorange;
     transform: scale(1.2);
 }
-/*---------- imagen de fondo ----------*/
+/*---------- fondo ----------*/
 body{
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(60,61,55,1) 0%, rgba(105,117,101,1) 50%, rgba(236,223,204,1) 100%);
+    background-color: #3C3D37;
 }
