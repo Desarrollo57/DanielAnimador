@@ -4,58 +4,89 @@
     margin: 0;
     padding: 0;
     font-family: "Zain", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
 }
+/*paleta de colores https://colorhunt.co/palette/1e201e3c3d37697565ecdfcc*/
 /*---------- menú superior ----------*/
 header{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: #333;
 }
-.contenedorMenuHorizontal{
-    position: absolute;
-    background: rgba(0, 0 ,0, .5);/*Efecto de transparencia para el menu principal*/
-    backdrop-filter: blur(3px);
-    border-radius: 5px;
+.logo{
+    max-width: 2rem;
+}
+.nav{
     width: 80%;
 }
-nav{
-    max-width: 900px;
-    margin: auto;
-    background-color: #333;
-    margin-top: 50px;
+.nav li a:hover{
+    background-color: #ECDFCC;
+    color: #1E201E;
+    border-radius: 3px;
 }
-.menuHorizontal{
-    list-style: none;
+.navList{
+    list-style-type: none;
+    gap: 1rem;
     display: flex;
     justify-content: space-around;
 }
-.menuHorizontal > li > a{
-    display: block;
-    padding: 15px 20px;
-    color: white;
+.navList li a{
     text-decoration: none;
+    color: #ECDFCC;
+    padding: 15px 20px
 }
-.menuHorizontal li:hover{
-    background-color: rgb(233, 175, 15);
-}
-.menuVertical{
-    position: absolute;
+.abrirMenu,
+.cerrarMenu{
     display: none;
-    list-style: none;
-    width: 200px;
-    background-color: rgba(0, 0, 0, .2);
 }
-.menuHorizontal li:hover .menuVertical{
-    display: block;
-}
-.menuVertical li:hover{
-    background-color: rgb(233, 175, 15);
-}
-.menuVertical li a{
-    display: block;
-    color: white;
-    padding: 15px 15px 15px 20px;
-    text-decoration: none;
+/*-----------------------Menú hamburguesa-----------------------*/
+@media screen and (max-width: 550px){
+    .abrirMenu,
+    .cerrarMenu{
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        color: #ECDFCC;
+        cursor: pointer;
+    }
+    .abrirMenu img{
+        width: 30px;
+        filter: invert(1);
+    }
+    .cerrarMenu img{
+        width: 30px;
+        filter: invert(1);
+    }
+    .nav{
+        width: 45%;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #333;
+        padding: 1rem 1rem 0 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, -5);
+        z-index: 100;
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .navList{
+        flex-direction: column;
+        align-items: end;
+    }
 }
 /*-----------------------Footer-----------------------*/
 .btn-wsp{

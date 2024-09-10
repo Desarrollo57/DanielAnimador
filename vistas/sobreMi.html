@@ -9,27 +9,14 @@
 </head>
 <body>
     <header>
-        <!-- MENÚ SUPERIOR -->
-        <nav class="contenedorMenuHorizontal">
-            <ul class="menuHorizontal">
+        <img class="logo" src="../img/icons/cinema4d.png" alt="logo">
+        <button class="abrirMenu" id="abrir"><img src="../img/icons/abrir.svg" alt="abrir"></button>
+        <nav class="nav" id="nav">
+            <button class="cerrarMenu" id="cerrar"><img src="../img/icons/cerrar.svg" alt="cerrar"></button>
+            <ul class="navList">
                 <li><a href="../index.html">Inicio</a></li>
-                <li>
-                    <a href="./proyectos.html">Proyectos</a>
-                    <!--
-                    <ul class="menuVertical">
-                        <li><a href="#">El mas bonito</a></li>
-                        <li><a href="#">Ahi maso</a></li>
-                        <li><a href="#">-_-</a></li>
-                    </ul>-->
-                </li>
-                <li>
-                    <a href="./sobreMi.html">Sobre mí</a>
-                    <!--
-                    <ul class="menuVertical">
-                        <li><a href="#">Mensual</a></li>
-                        <li><a href="#">Anual</a></li>
-                    </ul>-->
-                </li>
+                <li><a href="./proyectos.html">Proyectos</a></li>
+                <li><a href="./sobreMi.html">Sobre mí</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -42,6 +29,27 @@
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsa placeat quo ut commodi autem quis vitae praesentium quia, expedita provident velit maiores nesciunt distinctio quam harum optio illo doloremque?</p>
         </section>
+
+        <section class="slider" style="
+            --width: 100px;
+            --height: 50px;
+            --quantity: 10;
+        ">
+            <div class="list">
+                <div class="item" style="--position: 1"><img src="../img/ejemplo.jpg" alt=""></div>
+                <div class="item" style="--position: 2"><img src="../img/ejemplo.jpg" alt=""></div>
+                <div class="item" style="--position: 3"><img src="../img/ejemplo.jpg" alt=""></div>
+                <div class="item" style="--position: 4"><img src="../img/ejemplo.jpg" alt=""></div>
+                <div class="item" style="--position: 5"><img src="../img/ejemplo.jpg" alt=""></div>
+                <div class="item" style="--position: 6"><img src="../img/ejemplo.jpg" alt=""></div>
+                <div class="item" style="--position: 7"><img src="../img/ejemplo.jpg" alt=""></div>
+                <div class="item" style="--position: 8"><img src="../img/ejemplo.jpg" alt=""></div>
+                <div class="item" style="--position: 9"><img src="../img/ejemplo.jpg" alt=""></div>
+                <div class="item" style="--position: 10"><img src="../img/ejemplo.jpg" alt=""></div>
+
+            </div>
+        </section>
+
         <section class="sobreMi">
             <div class="tituloContenedor">
                 <h1>SOBRE MI</h1>
@@ -77,7 +85,7 @@
                 <h1>TECNOLOGIAS</h1>
                 <img src="../img/icons/tecnologias.svg" alt="icono">
             </div>
-            <p class="subtitulo">¿Cual sera esta vez?</p>
+            <p class="subtitulo">Mis herramientas de trabajo</p>
             <div class="programas">
                 <img src="../img/icons/afterEffects.png" alt="afterEffects">
                 <img src="../img/icons/ilustrator.png" alt="ilustrator">
@@ -93,5 +101,6 @@
             <i class="icon-whatsapp"></i>
         </a>
     </footer>
+    <script src="../scripts/menu.js"></script>
 </body>
 </html>
