@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zain:wght@200;300;400;700;800;900&display=swap');
-*{
-    font-family: "Zain", sans-serif;
-}
 /*---------- fondo ----------*/
 body{
     background-color: #3C3D37;
@@ -9,48 +5,34 @@ body{
 main{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10vh;
+    padding-top: 13vh;
 }
+
 .profesion{
-    /*background-color: aliceblue;*/
-    width: 80vw;
-    margin: 10vh 10vw 15vh 10vw;
-    border-radius: 4px;
+    
     padding: 2vh;
     color: #ECDFCC;
 }
 .sobreMi{
-    /*background-color: aliceblue;*/
-    width: 80vw;
-    margin: 10vh 10vw 1vh 10vw;
     border-radius: 4px;
     padding: 2vh;
     color: #ECDFCC;
 }
 .educacion{
-    /*background-color: aliceblue;*/
-    width: 38vw;
-    margin: 1vh 1vw 1vh 10vw;
     border-radius: 4px;
     padding: 2vh;
     color: #ECDFCC;
 }
 .experiencia{
-    /*background-color: aliceblue;*/
-    width: 39vw;
-    margin: 1vh 8vw 1vh 0.7vw;
     border-radius: 4px;
     padding: 2vh;
     color: #ECDFCC;
 }
 .tecnologias{
-    /*background-color: aliceblue;*/
-    width: 80vw;
-    margin: 1vh 10vw 5vh 10vw;
     border-radius: 4px;
     padding: 2vh;
     color: #ECDFCC;
-}
+}*/
 /*---------- contenido de los cuadros ----------*/
 .tituloContenedor{
     display: flex;
@@ -127,4 +109,39 @@ main{
 }
 .slider .item:hover{
     filter: grayscale(0);
+}
+/*---------- fin slider ----------*/
+/*---------- horizontal scroll ----------*/
+.scrollingContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.card{
+    flex: 0 0 auto;
+    border: solid 1px red;
+    margin: 10px;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+}
+.scrollingContainer::-webkit-scrollbar{
+    display: none;
+}
+.scrollingButtons{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    min-width: 97%;
+}
+section{
+    margin: 10px;
+    padding: 1%;
+    min-width: 80vw;
+}
+@media (max-width: 550px){
+    #right, #left{
+        display: none;
+    }
 }
