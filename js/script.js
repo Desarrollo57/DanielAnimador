@@ -108,7 +108,7 @@ window.addEventListener('scroll', () =>{
 });
 
 // DARK LIGHT MODE
-
+/*
 const body = document.querySelector('body');
 const mode = document.querySelector('.mode');
 const inverBox = document.querySelector('.brands');
@@ -118,7 +118,7 @@ mode.addEventListener('click',() =>{
     body.classList.toggle('dark-mode');
     inverBox.classList.toggle('inver-box');
     sunIcon.classList.toggle('show-icon');
-});
+});*/
 
 // SHOW MENU
 
