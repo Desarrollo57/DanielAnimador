@@ -676,8 +676,8 @@ header{
 }
 /*NEW CARDS START*/
 .card {
-    width: 500px;
-    height: 280px;
+    width: 600px;
+    height: 335px;
     perspective: 1000px;
     margin: 20px; /* Espacio alrededor de la tarjeta */
   }
@@ -1368,6 +1368,10 @@ header{
     .info-box h3{
         font-size: 1.5rem;
     }
+    .works-cards .card{
+        width: 500px;
+        height: 280px;
+    }
     .work-card{
         height: 250px;
     }
@@ -1484,8 +1488,8 @@ header{
         grid-template-columns: repeat(1,1fr);
     }
     .works-cards .card{
-        width: 90vw;
-        height: 27.4vh;
+        width: 440px;
+        height: 245px;
     }
     .work-card{
         height: 240px;
