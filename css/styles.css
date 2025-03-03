@@ -676,8 +676,8 @@ header{
 }
 /*NEW CARDS START*/
 .card {
-    width: 700px;
-    height: 390px;
+    width: 500px;
+    height: 280px;
     perspective: 1000px;
     margin: 20px; /* Espacio alrededor de la tarjeta */
   }
@@ -1474,6 +1474,9 @@ header{
     }
 }
 @media (max-width:500px){
+    .logo img{
+        width: 60vw;
+    }
     .nav-btns button{
         display: none;
     }
