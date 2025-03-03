@@ -128,3 +128,31 @@ const menu = document.querySelector('.menu');
 bar.addEventListener('click',() =>{
     menu.classList.toggle('show-menu')
 });
+
+// CONTACT
+
+// GET INPUTS
+const nombre = document.querySelector('#nombre-cliente').value;
+const correo = document.querySelector('#correo-cliente').value;
+const telefono = document.querySelector('#telefono-cliente').value;
+const asunto = document.querySelector('#asunto-cliente').value;
+const mensaje = document.querySelector('#mensaje-cliente').value;
+const btnEnviar = document.querySelector('#btn-enviar').value;
+const telefonoDiseñador = 573007165926;
+
+//crear funcion usando los inputs
+function enviarMensaje(){
+    var telefonoDiseñador = 573007165926;
+    var nombre = document.querySelector('#nombre-cliente').value;
+    var correo = document.querySelector('#correo-cliente').value;
+    var telefono = document.querySelector('#telefono-cliente').value;
+    var asunto = document.querySelector('#asunto-cliente').value;
+    var mensaje = document.querySelector('#mensaje-cliente').value;
+    
+    var url = "https://wa.me/" + telefonoDiseñador + "?text=Hola mi nombre es: " + nombre + " el motivo de mi mensaje es: " + asunto + " lo que requiero es: "+ mensaje +" mis datos son: " + correo + telefono;
+
+    window.open(url, '_blank').focus();
+
+    var mensaje = `https://api.whatsapp.com/send?phone=573007165926&text=Hola mi nombre es: ${nombre.value}`;
+    btnEnviar.href = mensaje;
+}
