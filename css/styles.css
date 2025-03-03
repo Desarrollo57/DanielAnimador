@@ -1483,6 +1483,10 @@ header{
     .service-cards{
         grid-template-columns: repeat(1,1fr);
     }
+    .works-cards .card{
+        width: 90vw;
+        height: 27.4vh;
+    }
     .work-card{
         height: 240px;
     }
@@ -1503,7 +1507,6 @@ header{
         grid-template-columns: repeat(1,1fr);
         gap: 10px;
     }
-    /*estilos propios*/
     .skills{
         display: none;
     }
